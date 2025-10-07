@@ -5,16 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0b0d10" />
   <title>Enemi Montana • Lore & Los Santos Customs</title>
-  <meta name="description" content="Oficiální lore: Enemi Montana a Los Santos Customs. Čistý text, moderní prezentace." />
+  <meta name="description" content="Oficiální lore: Enemi Montana a Los Santos Customs. Moderní neon/glass design, timeline, vlastní logo a barevné emoji." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600;800&family=Oxanium:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="img/lsc-logo.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="#top" aria-label="Domů">
+        <!-- VELKÉ KULATÉ LOGO (obrázek zvětšený uvnitř) -->
+        <span class="brand-badge">
+          <img src="img/lsc-logo.png" alt="Los Santos Customs logo" class="brand-img"/>
+        </span>
         <span class="logo">LSC</span>
         <span class="brand-text">Los Santos Customs</span>
       </a>
@@ -26,83 +31,194 @@
       <nav id="nav" class="nav">
         <a href="#enemi">Postava</a>
         <a href="#lsc">Frakce</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#faq">FAQ</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero" aria-label="Úvodní sekce">
+    <section class="hero">
       <div class="hero-bg">
         <div class="glow glow-1"></div>
         <div class="glow glow-2"></div>
         <div class="grid"></div>
+        <div class="scanline"></div>
+        <div class="mech-pattern"></div>
+        <div class="particles" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <img src="img/lsc-logo.png" alt="" class="hero-mark" aria-hidden="true" />
       </div>
+
       <div class="hero-content">
         <h1 class="title reveal-up">
           Enemi Montana
-          <span class="overline">Oficiální lore • Neapol → Los Santos</span>
+          <span class="overline">Neapol → Los Santos • 17. 8. 1996</span>
         </h1>
         <p class="subtitle reveal-up delay-1">
-          Kompletní texty lore přesně podle zadání. Moderní prezentace, žádné přepisy.
+          Rodinné řemeslo, vlastní cesta. Žádné zkratky, jen přesnost, styl a čest.
         </p>
         <div class="cta reveal-up delay-2">
-          <a href="#enemi" class="btn primary">📖 Lore postavy</a>
-          <a href="#lsc" class="btn ghost">🛠️ Lore frakce</a>
+          <a href="#enemi" class="btn primary"><span class="emoji">📖</span>&nbsp;Lore postavy</a>
+          <a href="#lsc" class="btn glass"><span class="emoji">🛠️</span>&nbsp;Lore frakce</a>
         </div>
       </div>
+
       <a href="#enemi" class="scroll-down" aria-label="Sjet níže">▾</a>
     </section>
 
-    <!-- ENEMI – TVŮJ TEXT 1:1 -->
-    <section id="enemi" class="section">
-      <div class="wrap">
-        <header class="section-head">
-          <h2 class="section-title">📖 Lore postavy – Enemi Montana</h2>
-        </header>
+    <!-- LAYOUT -->
+    <div class="layout">
+      <aside class="toc" id="toc">
+        <div class="toc-head">Obsah</div>
+        <ol>
+          <li><a href="#enemi">Enemi Montana</a></li>
+          <li><a href="#lsc">Los Santos Customs</a></li>
+          <li><a href="#timeline">Srozumitelná Timeline</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ol>
+      </aside>
 
-        <article class="prose reveal-fade">
-          <p><strong>Jméno:</strong> Enemi Montana<br>
-             <strong>Datum narození:</strong> 17. 8. 1996<br>
-             <strong>Místo narození:</strong> Neapol, Itálie
-          </p>
+      <div class="content">
+        <!-- ENEMI – 1:1 -->
+        <section id="enemi" class="section">
+          <header class="section-head">
+            <h2 class="section-title"><span class="emoji">📖</span>&nbsp;Lore postavy – Enemi Montana</h2>
+          </header>
 
-          <p>Enemi Montana vyrostl v rodině, kde zvuk kladiva a vůně motorového oleje byly stejně přirozené jako ranní espresso. Jeho otec Carlo Montana vlastnil vyhlášenou autodílnu v Itálii, která si díky poctivé práci a vášni k motorům získala respekt nejen mezi místními, ale i v širším okolí. Matka Lucia Montana se starala o rodinné zázemí a držela všechny pohromadě.</p>
+          <article class="prose reveal-fade">
+            <p><strong>Jméno:</strong> Enemi Montana<br>
+               <strong>Datum narození:</strong> 17. 8. 1996<br>
+               <strong>Místo narození:</strong> Neapol, Itálie
+            </p>
 
-          <p>Enemi měl bratra, s nímž kdysi sdílel lásku k rychlým autům, ale časem se jejich cesty rozdělily – dodnes spolu nemluví. Možná kvůli odlišným pohledům na život, možná kvůli rivalitě, která mezi nimi v garáži vždy doutnala.</p>
+            <p>Enemi Montana vyrostl v rodině, kde zvuk kladiva a vůně motorového oleje byly stejně přirozené jako ranní espresso. Jeho otec Carlo Montana vlastnil vyhlášenou autodílnu v Itálii, která si díky poctivé práci a vášni k motorům získala respekt nejen mezi místními, ale i v širším okolí. Matka Lucia Montana se starala o rodinné zázemí a držela všechny pohromadě.</p>
 
-          <p>Enemi byl jiný – nechtěl se navždy schovávat ve stínu otcovy dílny. Toužil po svobodě a po vlastní cestě. Proto se rozhodl opustit rodnou Itálii a vydat se za oceán. Jeho cílem bylo Los Santos, město, kde se sny buď rozletí k nebi, nebo shoří v pekle ulice.</p>
+            <p>Enemi měl bratra, s nímž kdysi sdílel lásku k rychlým autům, ale časem se jejich cesty rozdělily – dodnes spolu nemluví. Možná kvůli odlišným pohledům na život, možná kvůli rivalitě, která mezi nimi v garáži vždy doutnala.</p>
 
-          <p>Po příchodu do Los Santos začínal od nuly – jen s pár nářadím, znalostmi z rodiny Montana a nekonečnou chutí dokazovat, že i za mořem se dá jméno Montana spojovat s kvalitou a stylem. Enemi miluje auta, rychlost a detail – nikdy mu nešlo o černý byznys nebo kriminální cesty. Pro něj je život dost divoký už jen díky adrenalinu, který přináší práce s motory, noční projížďky po dálnici a neustálý boj o jméno mezi ostatními mechaniky.</p>
-        </article>
+            <p>Enemi byl jiný – nechtěl se navždy schovávat ve stínu otcovy dílny. Toužil po svobodě a po vlastní cestě. Proto se rozhodl opustit rodnou Itálii a vydat se za oceán. Jeho cílem bylo Los Santos, město, kde se sny buď rozletí k nebi, nebo shoří v pekle ulice.</p>
+
+            <p>Po příchodu do Los Santos začínal od nuly – jen s pár nářadím, znalostmi z rodiny Montana a nekonečnou chutí dokazovat, že i za mořem se dá jméno Montana spojovat s kvalitou a stylem. Enemi miluje auta, rychlost a detail – nikdy mu nešlo o černý byznys nebo kriminální cesty. Pro něj je život dost divoký už jen díky adrenalinu, který přináší práce s motory, noční projížďky po dálnici a neustálý boj o jméno mezi ostatními mechaniky.</p>
+          </article>
+        </section>
+
+        <!-- LSC – 1:1 -->
+        <section id="lsc" class="section alt">
+          <header class="section-head">
+            <h2 class="section-title"><span class="emoji">🛠️</span>&nbsp;Lore – Los Santos Customs (pod Enemi Montana)</h2>
+          </header>
+
+          <article class="prose reveal-fade">
+            <p>Když Enemi zakotvil v Los Santos, narazil na chátrající budovu bývalé autodílny. Byla to troska – oprýskané zdi, rozbité světla a zaprášené nářadí. Ale pro něj to byl základ. Kámen, na kterém mohl postavit novou éru Montana.</p>
+
+            <p>Tak vznikla Los Santos Customs pod vedením Enemiho Montany. Nebyla to jen dílna – byla to komunita. Místo, kam si lidé chodí nejen nechat spravit motor, ale taky popovídat, vypít kafe, pochlubit se projektem nebo si prostě vyčistit hlavu mezi lidmi, kteří rozumí asfaltu víc než čemukoli jinému.</p>
+
+            <p><strong>Pod jeho rukama Los Santos Customs rychle získalo reputaci:</strong></p>
+            <ul class="ticks">
+              <li><strong>Preciznost</strong> – žádná polovičatá práce, každé auto z dílny odjíždí v lepší kondici, než kdy bylo.</li>
+              <li><strong>Styl</strong> – Montana přináší kousek italské elegance do amerického chaosu.</li>
+              <li><strong>Divokost</strong> – tuning, speciální projekty, noční zakázky – dílna se nikdy nebojí experimentovat.</li>
+            </ul>
+
+            <p>Enemi věří, že auta nejsou jen stroje, ale součást identity. V Los Santos Customs se tak rodí nejen nové vozy, ale i nové příběhy. Každý zákazník je přijat jako partner, ať už jde o milionáře s exkluzivním sportovním vozem, nebo kluka z ulice s rozpadlou klasikou.</p>
+
+            <p>A co dál? Pro Enemiho je jasné: Los Santos Customs není cílová stanice. Je to základna, odkud se značka Montana znovu rozšíří do světa – tentokrát pod jeho jménem.</p>
+          </article>
+        </section>
+
+        <!-- TIMELINE -->
+        <section id="timeline" class="section">
+          <header class="section-head">
+            <h2 class="section-title">⏱️ Srozumitelná timeline</h2>
+            <p class="section-kicker">Milníky poskládané podle tvého lore.</p>
+          </header>
+
+          <ol class="timeline">
+            <li class="titem reveal-up">
+              <div class="ticon"><span class="emoji">🍼</span></div>
+              <div class="tbox">
+                <span class="tdate">1996 • Neapol, Itálie</span>
+                <h4>Začátek v rodinné dílně</h4>
+                <p>Carlo & Lucia, poctivé řemeslo, respekt komunity.</p>
+              </div>
+            </li>
+            <li class="titem reveal-up delay-1">
+              <div class="ticon"><span class="emoji">⚡</span></div>
+              <div class="tbox">
+                <span class="tdate">Později</span>
+                <h4>Rivalita s bratrem</h4>
+                <p>Odlišné pohledy → rozchod cest. Ticho místo slov.</p>
+              </div>
+            </li>
+            <li class="titem reveal-up delay-2">
+              <div class="ticon"><span class="emoji">✈️</span></div>
+              <div class="tbox">
+                <span class="tdate">Odchod z Itálie</span>
+                <h4>Volba svobody</h4>
+                <p>Cíl: Los Santos – město snů i pádů.</p>
+              </div>
+            </li>
+            <li class="titem reveal-up delay-3">
+              <div class="ticon"><span class="emoji">🔧</span></div>
+              <div class="tbox">
+                <span class="tdate">První měsíce v LS</span>
+                <h4>Začátek od nuly</h4>
+                <p>Jen pár nářadí, znalosti rodiny a chuť budovat jméno Montana.</p>
+              </div>
+            </li>
+            <li class="titem reveal-up delay-4">
+              <div class="ticon"><span class="emoji">🏚️</span></div>
+              <div class="tbox">
+                <span class="tdate">Zchátralá garáž</span>
+                <h4>Základ pro LSC</h4>
+                <p>Oprýskané zdi → nová éra Montana.</p>
+              </div>
+            </li>
+            <li class="titem reveal-up delay-5">
+              <div class="ticon"><span class="emoji">🏁</span></div>
+              <div class="tbox">
+                <span class="tdate">Reputace</span>
+                <h4>Preciznost • Styl • Divokost</h4>
+                <p>Každý vůz odjíždí lepší, než přijel.</p>
+              </div>
+            </li>
+            <li class="titem reveal-up delay-6">
+              <div class="ticon"><span class="emoji">🌍</span></div>
+              <div class="tbox">
+                <span class="tdate">Dál</span>
+                <h4>Základna pro rozšíření</h4>
+                <p>LSC jako odrazový můstek značky Montana.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section alt">
+          <header class="section-head">
+            <h2 class="section-title"><span class="emoji">❓</span>&nbsp;FAQ</h2>
+            <p class="section-kicker">Rychlé odpovědi z tvého lore.</p>
+          </header>
+
+          <div class="faq">
+            <details class="reveal-fade" open>
+              <summary><span class="emoji">🚫</span>&nbsp;Je v příběhu nelegál?</summary>
+              <p>Ne. Důraz je na poctivé řemeslo a reputaci.</p>
+            </details>
+            <details class="reveal-fade delay-1">
+              <summary><span class="emoji">🏷️</span>&nbsp;Co definuje LSC?</summary>
+              <p>Preciznost, styl (italská elegance) a odvaha experimentovat (noční zakázky).</p>
+            </details>
+            <details class="reveal-fade delay-2">
+              <summary><span class="emoji">👥</span>&nbsp;Pro koho je dílna?</summary>
+              <p>Od hypersportu po rezavou klasiku – každý zákazník je partner.</p>
+            </details>
+          </div>
+        </section>
       </div>
-    </section>
-
-    <!-- LSC – TVŮJ TEXT 1:1 -->
-    <section id="lsc" class="section alt">
-      <div class="wrap">
-        <header class="section-head">
-          <h2 class="section-title">🛠️ Lore – Los Santos Customs (pod Enemi Montana)</h2>
-        </header>
-
-        <article class="prose reveal-fade">
-          <p>Když Enemi zakotvil v Los Santos, narazil na chátrající budovu bývalé autodílny. Byla to troska – oprýskané zdi, rozbité světla a zaprášené nářadí. Ale pro něj to byl základ. Kámen, na kterém mohl postavit novou éru Montana.</p>
-
-          <p>Tak vznikla Los Santos Customs pod vedením Enemiho Montany. Nebyla to jen dílna – byla to komunita. Místo, kam si lidé chodí nejen nechat spravit motor, ale taky popovídat, vypít kafe, pochlubit se projektem nebo si prostě vyčistit hlavu mezi lidmi, kteří rozumí asfaltu víc než čemukoli jinému.</p>
-
-          <p><strong>Pod jeho rukama Los Santos Customs rychle získalo reputaci:</strong></p>
-          <ul class="ticks">
-            <li><strong>Preciznost</strong> – žádná polovičatá práce, každé auto z dílny odjíždí v lepší kondici, než kdy bylo.</li>
-            <li><strong>Styl</strong> – Montana přináší kousek italské elegance do amerického chaosu.</li>
-            <li><strong>Divokost</strong> – tuning, speciální projekty, noční zakázky – dílna se nikdy nebojí experimentovat.</li>
-          </ul>
-
-          <p>Enemi věří, že auta nejsou jen stroje, ale součást identity. V Los Santos Customs se tak rodí nejen nové vozy, ale i nové příběhy. Každý zákazník je přijat jako partner, ať už jde o milionáře s exkluzivním sportovním vozem, nebo kluka z ulice s rozpadlou klasikou.</p>
-
-          <p>A co dál? Pro Enemiho je jasné: Los Santos Customs není cílová stanice. Je to základna, odkud se značka Montana znovu rozšíří do světa – tentokrát pod jeho jménem.</p>
-        </article>
-      </div>
-    </section>
+    </div>
   </main>
 
   <footer class="site-footer">

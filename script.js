@@ -1,4 +1,4 @@
-// Smooth scroll for in-page links
+// Smooth scroll
 document.addEventListener('click', (e) => {
   const a = e.target.closest('a[href^="#"]');
   if (!a) return;
@@ -8,8 +8,8 @@ document.addEventListener('click', (e) => {
     if (el) {
       e.preventDefault();
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      nav.classList.remove('show');
-      navToggle.setAttribute('aria-expanded', 'false');
+      nav?.classList.remove('show');
+      navToggle?.setAttribute('aria-expanded', 'false');
     }
   }
 });
@@ -22,7 +22,7 @@ navToggle?.addEventListener('click', () => {
   navToggle.setAttribute('aria-expanded', String(open));
 });
 
-// Intersection-based reveal
+// Intersection reveal
 const io = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -32,7 +32,7 @@ const io = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.18 });
 
-document.querySelectorAll('.reveal-up, .reveal-fade').forEach(el => io.observe(el));
+document.querySelectorAll('.reveal-up, .reveal-fade, .titem').forEach(el => io.observe(el));
 
 // Year
 document.getElementById('year').textContent = new Date().getFullYear();
