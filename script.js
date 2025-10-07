@@ -8,7 +8,6 @@ document.addEventListener('click', (e) => {
     if (el) {
       e.preventDefault();
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      // close mobile nav if open
       nav.classList.remove('show');
       navToggle.setAttribute('aria-expanded', 'false');
     }
@@ -22,15 +21,6 @@ navToggle?.addEventListener('click', () => {
   const open = nav.classList.toggle('show');
   navToggle.setAttribute('aria-expanded', String(open));
 });
-
-// Sticky header elevation
-const header = document.querySelector('.site-header');
-let last = 0;
-addEventListener('scroll', () => {
-  const y = scrollY || document.documentElement.scrollTop;
-  header?.classList.toggle('elev', y > 6 && y >= last);
-  last = y;
-}, { passive: true });
 
 // Intersection-based reveal
 const io = new IntersectionObserver((entries) => {
